@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><!-- 套用 FONT AWESOME 圖示 -->
+    <style>
+        body {
+            font-family: tahoma;
+        }
+        
+        /* gallery */
+        #gallery {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        #gallery img {
+            width: 150%;
+            position: absolute;
+        }
+        #gallery .mask {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            background-color: rgba(255,255,255,0);
+            text-align: center;
+            transition: all .3s;
+        }
+        #gallery .mask a {
+            color: rgba(255,255,255,0);
+            text-decoration: none;
+            line-height: 200px;
+            font-size: 2em;
+            transition: all .3s;
+        }
+        #gallery:hover .mask{
+            background-color: rgba(0,0,0,.5);
+        }
+        #gallery:hover .mask a {
+            color: rgba(255,255,255,1);
+        }
+        
+        /* gallery2 */
+        #gallery2 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        #gallery2 img {
+            width: 150%;
+            position: absolute;
+        }
+        #gallery2 .mask {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left: -300px;
+            background-color: rgba(255,255,255,0);
+            text-align: center;
+            transition: all .3s;
+        }
+        #gallery2 .mask a {
+            color: rgba(255,255,255,0);
+            text-decoration: none;
+            line-height: 200px;
+            font-size: 2em;
+            transition: all .3s;
+        }
+        #gallery2:hover .mask{
+            background-color: rgba(0,0,0,.5);
+            left: 0;
+        }
+        #gallery2:hover .mask a {
+            color: rgba(255,255,255,1);
+        }
+        
+        /* gallery3 */
+        #gallery3 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        #gallery3 img {
+            width: 150%;
+            position: absolute;
+        }
+        #gallery3 .mask {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: -200px;
+            background-color: rgba(255,255,255,0);
+            text-align: center;
+            transition: all .3s;
+        }
+        #gallery3 .mask a {
+            color: rgba(255,255,255,0);
+            text-decoration: none;
+            line-height: 200px;
+            font-size: 2em;
+            transition: all .3s;
+        }
+        #gallery3:hover .mask{
+            background-color: rgba(0,0,0,.5);
+            top: 0;
+        }
+        #gallery3:hover .mask a {
+            color: rgba(255,255,255,1);
+        }
+        
+        /* gallery4 */
+        #gallery4 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        #gallery4 img {
+            width: 150%;
+            position: absolute;
+        }
+        #gallery4 .mask {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            background-color: rgba(255,255,255,0);
+            text-align: center;
+            transform: scale(0,0);
+            transition: all .3s;
+        }
+        #gallery4 .mask a {
+            color: rgba(255,255,255,0);
+            text-decoration: none;
+            line-height: 200px;
+            font-size: 2em;
+            transition: all .3s;
+        }
+        #gallery4:hover .mask{
+            background-color: rgba(0,0,0,.5);
+            transform: scale(1,1);
+        }
+        #gallery4:hover .mask a {
+            color: rgba(255,255,255,1);
+        }
+        
+        /* gallery5 */
+        #gallery5 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        #gallery5 img {
+            width: 150%;
+            position: absolute;
+        }
+        #gallery5 .mask {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            background-color: rgba(255,255,255,0);
+            text-align: center;
+            transform: rotate(180deg) scale(0.0);
+            transition: all .3s;
+        }
+        #gallery5 .mask a {
+            color: rgba(255,255,255,0);
+            text-decoration: none;
+            line-height: 200px;
+            font-size: 2em;
+            transition: all .3s;
+        }
+        #gallery5:hover .mask{
+            background-color: rgba(0,0,0,.5);
+            transform: rotate(360deg) scale(1,1);
+        }
+        #gallery5:hover .mask a {
+            color: rgba(255,255,255,1);
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img src="images/07.jpg" alt="">
+        <div class="mask">
+            <a href="#">more</a>
+        </div>        
+    </div>
+    <div id="gallery2">
+        <img src="images/07.jpg" alt="">
+        <div class="mask">
+            <a href="#">more</a>
+        </div>        
+    </div>
+    <div id="gallery3">
+        <img src="images/07.jpg" alt="">
+        <div class="mask">
+            <a href="#">more</a>
+        </div>        
+    </div>
+    <div id="gallery4">
+        <img src="images/07.jpg" alt="">
+        <div class="mask">
+            <a href="#">more</a>
+        </div>                
+    </div>
+    <div id="gallery5">
+        <img src="images/07.jpg" alt="">
+        <div class="mask">
+            <a href="#">more</a>
+        </div>        
+    </div>
+</body>
+</html>
