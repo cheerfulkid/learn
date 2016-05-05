@@ -1,0 +1,172 @@
+.fixed {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: transparent;
+    /* 若想讓NAV融入在<header>裡，可以把它包在<header>裡，並將背景色設成透明色 */
+}
+
+nav h1 a {
+    /*    float: left; 手機板不用水平排列，而是垂直排列 */ 
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    height: 40px;
+    background-color: #f0a;
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    /*    float: right;*/
+}
+
+nav li {
+    /*    float: left;*/
+    list-style: none;
+    margin-right: 5px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    line-height: 50px;
+    /*    transition: all .3s;  手機通常沒辦法hover */
+}
+
+nav li a:hover {
+    /*
+    background-color: #666;
+    color: #fff;
+    手機通常沒辦法hover
+*/
+}
+
+header {
+    height: 300px;
+    background-image: url(images/03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* #about 內的文字段落區塊使用 margin-left:15px; margin-right:15px; 使他們彼此不緊貼 */
+
+
+/* #gallery 的圖片則讓他們彼此緊貼，所以未用 margin */
+
+
+/* 若是 #about #gallery 內的物件都有使用 margin 的話，才會再利用 #about #gallery 做反向抵銷 margin 的動作，ex: margin-left:-15px; margin-right:-15px; 否則就用下面的方式來做垂直對齊 */
+
+#about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: burlywood;
+    font-family: arial;
+}
+
+#about .box {
+    width: 90%; /* 如此就能夠不緊貼視窗的邊邊 */
+    margin: auto; /* 使box能夠保持寬度90%的置中 */
+/*    float: left;*/
+/*
+    margin-right: 15px;
+    margin-left: 15px;
+*/
+}
+
+#about h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#gallery .fixed {
+/*    width: 1170px;*/
+
+}
+
+#gallery .box {
+/*    width: 585px;*/
+    width:100%;
+    height: 585px;
+/*    float: left;*/
+    overflow: hidden;
+    /* 包在 .box 內的 img 大於 .box 本身，所以需要hidden */
+}
+
+#gallery .box img {
+    width: 150%;
+}
+
+#service {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: darksalmon;
+}
+
+#service .box {
+    width: 260px; /* 手機尺寸通常都不會有那麼小的，所以出現卷軸沒有關係 */
+    /* (1200/4)-(15*2)=300-30=270 */
+    height: 260px;
+    margin: auto;
+/*    float: left;*/
+/*
+    margin-right: 15px;
+    margin-left: 15px;
+*/
+    overflow: hidden;
+    border-radius: 50%;
+    /* 270px 的一半 */
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 5px #000;
+    margin-bottom: 50px;
+    /* x y 強度 顏色 */
+}
+
+#service .box img {
+    width: 200%;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000;
+}
+
+footer .fixed {
+/*    width: 1170px;*/
+    /* 為了垂直對齊 */
+}
+
+footer .copyrights {
+/*    float: left;*/
+    margin-bottom: 20px;
+}
+
+footer .copyrights p {
+    text-align: center;
+    color: #fff;
+}
+
+footer .sns {
+/*    float: right;*/
+    text-align: center;
+}
+
+footer .sns a {
+    
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}

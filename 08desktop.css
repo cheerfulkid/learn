@@ -1,0 +1,159 @@
+.fixed {
+    width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: transparent;
+    /* 若想讓NAV融入在<header>裡，可以把它包在<header>裡，並將背景色設成透明色 */
+}
+
+nav h1 {
+    float: left;
+}
+
+nav h1 a {
+    display: block;
+    height: 40px;
+    background-color: #f0a;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    line-height: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    line-height: 50px;
+    transition: all .3s;
+}
+
+nav li a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+header {
+    height: 600px;
+    background-image: url(images/03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* #about 內的文字段落區塊使用 margin-left:15px; margin-right:15px; 使他們彼此不緊貼 */
+
+
+/* #gallery 的圖片則讓他們彼此緊貼，所以未用 margin */
+
+
+/* 若是 #about #gallery 內的物件都有使用 margin 的話，才會再利用 #about #gallery 做反向抵銷 margin 的動作，ex: margin-left:-15px; margin-right:-15px; 否則就用下面的方式來做垂直對齊 */
+
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: burlywood;
+    font-family: arial;
+}
+
+#about .box {
+    width: 370px;
+    /* (1200/3)-(15*2)=400-30=370 */
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#about h1 {
+    margin-bottom: 20px;
+}
+
+#gallery .fixed {
+    width: 1170px;
+    /* 對照 #about 內的最左及最右都有15px的外邊距，原本 .fixed 的寬度為1200px，所以1200-(15*2)=1200-30=1700，達到 #about 內的段落文字與 #gallery 的圖片垂直對齊 */
+}
+
+#gallery .box {
+    width: 585px;
+    /* 1170/2=585  */
+    height: 585px;
+    float: left;
+    overflow: hidden;
+    /* 包在 .box 內的 img 大於 .box 本身，所以需要hidden */
+}
+
+#gallery .box img {
+    width: 150%;
+}
+
+#service {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: darksalmon;
+}
+
+#service .box {
+    width: 260px;
+    /* (1200/4)-(15*2)=300-30=270 */
+    height: 260px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* 270px 的一半 */
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 5px #000;
+    /* x y 強度 顏色 */
+}
+
+#service .box img {
+    width: 200%;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000;
+}
+
+footer .fixed {
+    width: 1170px;
+    /* 為了垂直對齊 */
+}
+
+footer .copyrights {
+    float: left;
+}
+
+footer .copyrights p {
+    color: #fff;
+}
+
+footer .sns {
+    float: right;
+}
+
+footer .sns a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
