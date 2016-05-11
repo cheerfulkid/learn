@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    body {
+        font-family: '微軟正黑體';
+    }
+    #tab {
+        background-color: #ddd;
+        width: 330px;
+        margin: auto;
+        padding: 20px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        margin: auto;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        float: left;
+        width: 100px;
+        
+        margin: 5px;
+        background-color: #000;
+        color: #fff;
+    }
+    .clearfix::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+    #text {
+        background-color: #fff;
+        padding: 10px;
+        margin: 20px 0 10px 0;
+    }
+    .active {
+        background-color: #fff;
+        color: crimson;
+    }
+</style>
+<script>
+    window.onload=function(){
+        var arr=[
+            '快過年了，大家可以商量去哪兒玩～',
+            '過年囉～全家福聚在一起很幸福開心',
+            '還沒有開始找新工作～趁機跟朋友去日本玩',
+            '天氣忽冷忽熱，天災又變得越來越頻繁…大家身體要保重',
+            '哥哥去美國巡迴，五月底才會回來',
+            '今年又過了一半了，時間過很快',
+            '我是七月生的',
+            '又到了暑期活動的季節',
+            '螢火蟲出來囉',
+            '雙十國慶放假',
+            '感恩的季節',
+            '聖誕的季節'
+        ];
+        var oTab = document.getElementById('tab');
+        var oLi = oTab.getElementsByTagName('li');
+        var oTxt = oTab.getElementsByTagName('div')[0];
+        
+        for(var i=0;i<oLi.length;i++) {
+            oLi[i].index=i;
+            oLi[i].onmouseover = function(){
+                for(var i=0;i<oLi.length;i++) {
+                    oLi[i].className='';
+                }
+                this.className='active';
+                oTxt.innerHTML='<h2>'+(this.index+1)+'月活動</h2><p>'+arr[this.index]+'</p>';
+            };
+        }
+    };
+</script>
+<body>
+    <div id="tab">
+        <ul class="clearfix">
+            <li><h2>1</h2><p>Jan</p></li>
+            <li><h2>2</h2><p>Feb</p></li>
+            <li><h2>3</h2><p>Mar</p></li>
+            <li><h2>4</h2><p>Apr</p></li>
+            <li><h2>5</h2><p>May</p></li>
+            <li><h2>6</h2><p>Jun</p></li>
+            <li><h2>7</h2><p>Jul</p></li>
+            <li><h2>8</h2><p>Aug</p></li>
+            <li><h2>9</h2><p>Sep</p></li>
+            <li><h2>10</h2><p>Oct</p></li>
+            <li><h2>11</h2><p>Nov</p></li>
+            <li><h2>12</h2><p>Dec</p></li>
+        </ul>
+        <div id="text">
+                <h2>1月活動</h2>
+                <p>快過年了，大家可以商量要去哪兒玩～</p>
+        </div>
+    </div>
+</body>
+</html>
