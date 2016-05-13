@@ -50,7 +50,7 @@
     </style>
 </head>
 <body>
-    <form method="GET" action="20160512HW1-2.php">
+    <form method="GET" action="05-2.php">
         <fieldset>
             <legend>個人資訊</legend>
             姓    名：<input type="text" name="username"><br>
