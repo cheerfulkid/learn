@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- try to be http://blackrockdigital.github.io/startbootstrap-landing-page/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!--光觀察按鈕質感就會發現有差，加入這主題會有陰影感覺較官網的範例按鈕立體-->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+    <style>
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://fonts.gstatic.com/s/lato/v11/XNVd6tsqi9wmKNvnh5HNEBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/PLygLKRVCQnA5fhu3qk5fQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/AcvTq8Q0lyKKNxRlL28RnxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .btn {
+            letter-spacing: 2px;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        nav {
+            font-weight: 700;
+        }
+        
+        nav .navbar-brand {
+            font-size: 14px;
+        }
+        
+        header {
+            padding-top: 20%;
+            padding-bottom: 20%;
+            background: url(http://blackrockdigital.github.io/startbootstrap-landing-page/img/intro-bg.jpg) 50% 50% no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+        
+        header h1 {
+            font-size: 5em;
+            font-weight: 700;
+            text-shadow: 2px 2px 3px #000;
+            text-shadow: 2px 2px 3px #000;
+        }
+        
+        header h3 {
+            font-weight: 700;
+            text-shadow: 2px 2px 3px #000;
+        }
+        
+        header hr {
+            width: 400px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* 陰影效果 */
+        }
+        
+        header ul {
+            padding: 0;
+        }
+        
+        header li {
+            list-style: none;
+            display: inline-block; /* 為了響應式做斷行區塊方便。以後看到並排一起的按鈕連結都用清單結構化，在往後響應式調整會方便許多! */
+            margin-right: 10px;
+        }
+        
+        header .btn {
+            /* 若用 header a 權限不夠高，所以會沒有效果 ，而底下#media a 則因為 #media 是 id 權限有高於 .btn */
+            padding: 10px 20px;
+        }
+        
+        #content .row {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        #content .col-md-5:last-child {
+            margin-left: 16%;
+        }
+        
+        #content #row1,
+        #content #row3 {
+            background-color: #f8f8f8;
+        }
+        
+        #content .hr {
+            border-bottom: 1px #eee solid;
+        }
+        
+        #content h2::before {
+            content: '';
+            display: block;
+            width: 200px;
+            border-top: 3px #eee solid;
+            padding-top: 40px;
+        }
+        
+        #content p {
+            font-size: 18px;
+        }
+        
+        #content img {
+            width: 100%;
+        }
+        
+        #media {
+            background: url(http://blackrockdigital.github.io/startbootstrap-landing-page/img/banner-bg.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            color: #fff;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        
+        #media h1 {
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 3px #000;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #media ul {
+            float: right;
+            margin: 0;
+        }
+        
+        #media li {
+            /* 用 #media a 也有效果 */
+            margin-right: 10px;
+            list-style: none;
+            display: inline-block; /* 為了響應式做斷行區塊方便。以後看到並排一起的按鈕連結都用清單結構化，在往後響應式調整會方便許多! */
+            margin-right: 20px;
+        }
+        
+        #media .btn {
+            padding: 10px 20px;
+        }
+        
+        footer {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-weight: 700;
+        }
+        
+        footer ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer li {
+            float: left;
+            margin-right: 10px;
+            list-style: none;
+        }
+        
+        footer p {
+            clear: both;
+            color: #666;
+            margin-top: 40px;
+            font-size: 85%;
+        }
+        
+        @media (max-width:1200px) {
+            #media ul {
+                float: left;
+                padding: 0;
+                margin-top: 15px;
+            }
+        }
+        
+        @media (max-width:991px) {
+            #content .col-md-5:last-child {
+                margin-left: 0%;
+            }
+        }
+        
+        @media (max-width:768px) {
+            header {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 15%;
+            }
+            header h1 {
+                font-size: 3em;
+            }
+            header li {
+                display: block; /* 為了使各個按鈕連結不並排再一起，各自獨立斷成一行 */
+                margin: auto; /* 為了使其置中 */
+                margin-bottom: 20px;
+            }
+            header hr {
+                width: 100%;
+            }
+            #media li {
+                display: block; /* 為了使各個按鈕連結不並排再一起，各自獨立斷成一行 */
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- 之前要再另外嵌入 jQuery 語法，此程式才會執行-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <header>
+        <h1>Landing Page</h1>
+        <h3>A Template by Start Bootstrap</h3>
+        <hr>
+        <ul>
+            <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;TWITTER</a></li>
+            <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;GITHUB</a></li>
+            <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;LINKEDIN</a></li>
+        </ul>
+    </header>
+    <div id="content">
+        <div id="row1" class="hr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h2>Death to the Stock Photo:<br>Special Thanks</h2>
+                        <p>A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <img src="http://blackrockdigital.github.io/startbootstrap-landing-page/img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row2" class="hr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <img src="http://blackrockdigital.github.io/startbootstrap-landing-page/img/dog.png" alt="">
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <h2>3D Device Mockups<br>by PSDCovers</h2>
+                        <p>Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row3" class="hr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h2>Google Web Fonts and<br>Font Awesome Icons</h2>
+                        <p>This template features the 'Lato' font, part of the Google Web Font library, as well as icons from Font Awesome.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <img src="http://blackrockdigital.github.io/startbootstrap-landing-page/img/phones.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="media">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Connect to Start Bootstrap:</h1>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;TWITTER</a></li>
+                        <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;GITHUB</a></li>
+                        <li><a href="javascript:;" class="btn btn-default"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;LINKEDIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="javascript:;">Home</a></li>
+                <li>⋅</li>
+                <li><a href="javascript:;">About</a></li>
+                <li>⋅</li>
+                <li><a href="javascript:;">Services</a></li>
+                <li>⋅</li>
+                <li><a href="javascript:;">Contact</a></li>
+            </ul>
+            <p>Copyright © Your Company 2014. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
