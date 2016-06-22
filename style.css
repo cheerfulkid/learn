@@ -4,6 +4,9 @@ img {
     width: 100%;
 }
 
+body {
+    font-size:100%;
+}
 /*
 .container {
     margin: auto;
