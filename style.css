@@ -1,0 +1,83 @@
+/* 共用 CSS */
+
+img {
+    width: 100%;
+}
+
+/*
+.container {
+    margin: auto;
+    width: 960px;
+}
+*/
+
+.header,
+.navigation,
+.footer {
+    clear: both;
+}
+
+.navigation {
+    min-height: 25px;
+}
+
+.header {
+    background: url(4.jpg) repeat;
+    height: 200px;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* 桌面 CSS */
+
+@media screen and (min-width:481px) {
+    body, /* body也設跟其他區塊一樣的寬度也可以達到置中效果，且裡面的文字也會隨著視窗縮放而自行推擠斷行排到下方(除去出現捲軸的情況) */
+    .header,
+    .navigation,
+    .footer {
+        width: 960px;
+        margin: auto;
+    }
+    .column {
+        margin: 10px 10px 0 0;
+    }
+    .navigation ul li {
+        width: 320px;
+    }
+    #visit {
+        width: 240px;
+        float: left;
+    }
+    #points {
+        width: 240px;
+        float: right;
+    }
+    #main {
+        margin: 10px 260px 0 250px;
+        width: 460px;
+    }
+}
+
+/* 行動裝置 CSS */
+
+@media screen and (max-width:480px) {
+    .header,
+    .navigation,
+    .footer {
+        width: 320px;
+    }
+    .column {
+        margin: 10px 0;
+        border-bottom: 1px solid #7b96bc;
+    }
+    .navigation ul li {
+        width: 106.6667px;
+    }
+    #visit,
+    #points,
+    #main {
+        width: 320px;
+    }
+}
