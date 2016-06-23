@@ -1,11 +1,12 @@
 /* 共用 CSS */
 
 img {
-    width: 100%;
+    max-width: 100%; /* 圖片最寬不會超過原始圖檔的寬? */
+	/* 若是 width:100% 的話會跟外層元素的寬一樣寬(所以圖檔可能會超過原始檔的寬而變得模糊) */
 }
 
 body {
-    font-size:100%;
+	font-size:100%;
 }
 /*
 .container {
@@ -14,7 +15,15 @@ body {
 }
 */
 
+body, /* body也設跟其他區塊一樣的寬度也可以達到置中效果，且裡面的文字也會隨著視窗縮放而自行推擠斷行排到下方(除去出現捲軸的情況) */
 .header,
+.navigation,
+.footer {
+	width: 100%;
+	margin: auto;
+}
+.header
+,
 .navigation,
 .footer {
     clear: both;
@@ -22,6 +31,11 @@ body {
 
 .navigation {
     min-height: 25px;
+}
+
+.navigation ul li {
+	width: 33.333333%;
+	/* why 換算成 33.333344% 時就會變斷到不該斷的地方? */
 }
 
 .header {
@@ -35,52 +49,38 @@ body {
 
 /* 桌面 CSS */
 
-@media screen and (min-width:481px) {
-    body, /* body也設跟其他區塊一樣的寬度也可以達到置中效果，且裡面的文字也會隨著視窗縮放而自行推擠斷行排到下方(除去出現捲軸的情況) */
-    .header,
-    .navigation,
-    .footer {
-        width: 960px;
-        margin: auto;
-    }
+@media screen and (min-width:481px) {    
     .column {
-        margin: 10px 10px 0 0;
+        margin: 10px 1.04166667% 0 0;
     }
-    .navigation ul li {
-        width: 320px;
-    }
+
     #visit {
-        width: 240px;
+        width: 25%;
         float: left;
     }
+	
     #points {
-        width: 240px;
+        width: 25%;
         float: right;
     }
+	
     #main {
-        margin: 10px 260px 0 250px;
-        width: 460px;
+        margin: 10px 27.0833333% 0 26.0416667%;
+        width: 47.916667%;
     }
 }
 
 /* 行動裝置 CSS */
 
 @media screen and (max-width:480px) {
-    .header,
-    .navigation,
-    .footer {
-        width: 320px;
-    }
     .column {
         margin: 10px 0;
         border-bottom: 1px solid #7b96bc;
     }
-    .navigation ul li {
-        width: 106.6667px;
-    }
+	
     #visit,
     #points,
     #main {
-        width: 320px;
+        width: 100%;
     }
 }
