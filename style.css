@@ -5,9 +5,7 @@ img {
 	/* 若是 width:100% 的話會跟外層元素的寬一樣寬(所以圖檔可能會超過原始檔的寬而變得模糊) */
 }
 
-body {
-	/*font-size:100%;*/
-}
+
 /*
 .container {
     margin: auto;
